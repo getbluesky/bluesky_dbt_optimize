@@ -8,8 +8,8 @@ This package is maintained by [Bluesky](https://www.getbluesky.io/) and it allow
 
 ```yaml
 packages:
-  - package: getbluesky/bluesky_dbt_optimize
-    version: [">=1.0.0", "<2.0.0"]
+  - git: "https://github.com/getbluesky/bluesky_dbt_optimize.git"
+    revision: v1.0.0
 ```
 
 2. Contact Bluesky to get your organization's unique identification code and add a variable to your `dbt_project.yml` file.
