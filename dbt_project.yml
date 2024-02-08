@@ -1,5 +1,5 @@
 # This package is created and maintained by https://www.getbluesky.io/ 
 
 name: 'bluesky_dbt_optimize'
-version: '1.0.0'
+version: '1.1.0'
 config-version: 2
