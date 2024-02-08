@@ -12,15 +12,7 @@ packages:
     version:  [">=1.0.0", "<2.0.0"]
 ```
 
-2. Contact Bluesky to get your organization's unique identification code and add a variable to your `dbt_project.yml` file.
-   Replace the ** in the example below with the identification code provided by Bluesky.  Example:  `"BLUESKY_DP0"`
-
-```yaml
-vars:
-  bluesky_id: "BLUESKY_DP**"
-```
-
-3. In your `dbt_project.yml` file, create the pre-hook call in the models section.
+2. In your `dbt_project.yml` file, create the pre-hook call in the models section.
 
 ```yaml
 models:
@@ -28,5 +20,5 @@ models:
     sql: "use warehouse {{ bluesky_dbt_optimize.warehouse_selector() }}"
 ```
 
-4. When these steps are complete, inform your customer success contact and Bluesky will open the data share to provide
+3. When these steps are complete, inform your customer success contact and Bluesky will open the data share to provide
    the recommendations at runtime.
